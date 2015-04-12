@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'title' => 'Searchbar: Password Generator',
 	'description' => 'A password generator for ext: searchbar',
 	'category' => 'fe',
-	'version' => '1.0.0',
+	'version' => '2.0.0',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
@@ -26,7 +26,8 @@ $EM_CONF[$_EXTKEY] = array (
 	array (
 		'depends' => 
 		array (
-			'searchbar' => '',
+			'typo3' => '6.2.0-7.1.99',
+			'searchbar' => '2.0.0-2.9.99',
 		),
 		'conflicts' => 
 		array (
@@ -34,6 +35,5 @@ $EM_CONF[$_EXTKEY] = array (
 		'suggests' => 
 		array (
 		),
-	),
+	)
 );
-
