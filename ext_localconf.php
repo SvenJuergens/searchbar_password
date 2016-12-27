@@ -1,13 +1,8 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-	die ('Access denied.');
-}
+defined('TYPO3_MODE') or die();
 
 // Example for adding Additional Functions to Searchbar
-$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['searchbar']['additionalFunctions']['tx_searchbarpassword'] = array(
-	'title' => 'Password Generator',
-	//old way, before namespaces 
-	//'filePath' => t3lib_extMgm::extPath($_EXTKEY) . 'Classes/class.tx_searchbarpassword.php'
-	// new Way with Namespaces
-	'namespaceOfClass' => 'SvenJuergens\\SearchbarPassword\\Password'
-);
+$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['searchbar']['additionalFunctions']['tx_searchbarpassword'] = [
+    'title' => 'Password Generator',
+    'namespaceOfClass' => 'SvenJuergens\\SearchbarPassword\\Password'
+];
